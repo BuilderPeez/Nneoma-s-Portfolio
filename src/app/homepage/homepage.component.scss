@@ -1,3 +1,9 @@
+nav{
+    border-bottom: 1px solid grey;
+    display: flex;
+
+    
+}
 li{
     margin-left: 30px;
 }
@@ -11,7 +17,7 @@ li{
     font-optical-sizing: auto;
   }
   .navbar .btn{
-    border: 2px solid #FFC30F;
+    border: 2px solid #FD853A;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 5px;
@@ -21,3 +27,93 @@ li{
 a{
     color: white ;
 }
+a:hover{
+    color: #FD853A ;
+}
+
+.containers {
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  /* Styles for the centered content */
+  .centered-content {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282424;
+  }
+  .containers .img1{
+    position: relative;
+    bottom: 57px;
+    left: 35px;
+    height: 20px;
+  }
+  .nneoma {
+    font-family: "Urbanist", sans-serif;
+    .img2{
+        position: relative;
+        bottom: 32px;
+        right: 290px;
+        height: 60px;
+  
+    }
+  }
+  .pic img{
+    border-radius: 50%;
+    background-color: #FD853A;
+    // height: fit-content;
+    width: fit-content;
+    justify-content: center;
+  }
+  .star i{
+    font-size: 25px;
+  }
+  .star h1, p{
+    color: white;
+  }
+  .star p{
+    margin-left: 50px;
+}
+.star h1{
+    width: 100%;
+}
+.profile{
+    position: relative;
+    left: 70px;
+    background: none;
+    top: 70px;
+}
+.star{
+    position: relative;
+    top: 70px;
+}
+.skills{
+    margin-top: 100px;
+
+    h3{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    // img{
+        
+    // }
+}
+.footer{
+    
+    img{
+        width: 100%;
+        background: none;
+
+    }
+}
+

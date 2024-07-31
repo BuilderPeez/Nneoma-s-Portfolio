@@ -3,6 +3,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #282424;
+    background-color: #0C0C0C;
+    scroll-behavior: smooth!important;
 
 }
+body{
+    background-color: #0C0C0C;
+
+}
+.notfixed{
+    position: static;
+    transition: 0.3s linear;
+    // top: -50px;
+    height: 17vh;
+    
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    // background-color: #333;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.3s linear;
+    height: 15vh;
+    // margin-top: 20px;
+}
+.active-link {
+    color: #FD853A !important; 
+    font-weight: bold; 
+  }
+  
