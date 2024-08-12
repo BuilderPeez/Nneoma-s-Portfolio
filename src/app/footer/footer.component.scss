@@ -1,0 +1,51 @@
+.footer{
+    text-align: center;
+    h5{
+      color: #FD853A;
+      font-family: inter;
+      position: relative;
+      top: 90px;
+      
+    }
+    p{
+      border: #FD853A solid 1px;
+      // width: 1520px;
+      font-family: inter;
+      font-weight: bolder;
+      padding: 10px 20px;
+      margin: 10px 620px;
+      margin-top: 100px;
+      border-radius: 10px;
+      background-color: #FD853A;
+    }
+   
+    img{
+      margin-top: -70px;
+    }
+    .navbar{
+      background: none;
+      position: relative;
+      top: 270px;
+    }
+    ul, li, a{
+      background: none;
+      font-size: 16px;
+      color: white;
+    }
+    ul, li, a:hover{
+      color: black;
+    }
+  }
+  .footer{
+    
+    img{
+        width: 100%;
+        background: none;
+
+    }
+    ul{
+        margin-left: 50px;
+    }
+
+   
+}

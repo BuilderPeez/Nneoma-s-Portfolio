@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -19,7 +21,9 @@ import { ContactComponent } from './contact/contact.component';
     HomepageComponent,
     WorkComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
