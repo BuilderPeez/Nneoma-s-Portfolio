@@ -15,18 +15,38 @@ export class EmailService {
     });
   }
 
-  sendEmail(subject: string, message: string, recipientName: string, recipientEmail: string) {
+  sendEmail(subject: string, message: string, senderName: string, senderEmail: string) {
     return this.smtpexpressClient.sendApi.sendMail({
       subject: subject,
       message: message,
       sender: {
-        name: 'Opeyemi',
-        email: 'sm0pid-qnq1rqKvAoFRM2PgQovVem5iU@projects.smtpexpress.com' // Replace with your sender email
+        name: 'Nneoma',
+        email: 'sm0pid-qnq1rqKvAoFRM2PgQovVem5iU@projects.smtpexpress.com' 
       },
       recipients: {
         // name: recipientName,
-        email: 'opeyeminwafor@gmail.com'
+        email: 'onuohanneoma7@gmail.com'
       }
     });
   }
+
+  // sendEmail(data: any) {
+  //   console.log(data)
+  //   return this.smtpexpressClient.sendApi.sendMail({
+  //     subject: data.subject,
+  //     message: data.message,
+  //     sender: {
+  //       name: 'Pe',
+  //       email: 'opeyafor@gmail.com' 
+  //       // name: data.name,
+  //       // email: data.email 
+  //     },
+      
+  //     recipients: {
+  //       // name: recipientName,
+  //       email: 'opeyeminwafor@gmail.com'
+  //     }
+      
+  //   });
+  // }
 }

@@ -30,7 +30,11 @@ export class ContactComponent {
   // }
   onSubmit() {
     const subject = `Message from ${this.fullName}, ${this.email}`;
-    
+    const payload = {
+      name: this.fullName,
+      email: this.email,
+      sender: subject
+    }
     this.emailService.sendEmail(subject, this.message, this.fullName, this.email)
       .then((response: any) => {
         console.log('Email sent successfully', response);
@@ -42,7 +46,41 @@ export class ContactComponent {
         alert('There was an error sending the email.');
       });
   }
+  // onSubmit() {
+  //   const subject = `Message from ${this.fullName} ${this.email}`;
+  //   const payload = {
+  //     name: this.fullName,
+  //     email: this.email,
+  //     sender: subject,
+  //     message: this.message
+  //   }
+  //   console.log(payload)
+  //   this.emailService.sendEmail(payload)
+  //     .then((response: any) => {
+  //       console.log('Email sent successfully', response);
+  //       alert('Email sent successfully!');
+  //       this.clearForm();
+  //     })
+  //     .catch((error: any) => {
+  //       console.error('Error sending email', error);
+  //       alert('There was an error sending the email.');
+  //     });
+  // }
 
+  // onSubmit() {
+  //   const subject = `Message from ${this.fullName},`;
+  //   console.log(subject, this.message, this.fullName, this.email, 'test')
+  //   this.emailService.sendEmail(subject, this.message, this.fullName, this.email)
+  //     .then((response: any) => {
+  //       console.log('Email sent successfully', response);
+  //       alert('Email sent successfully!');
+  //       this.clearForm();
+  //     })
+  //     .catch((error: any) => {
+  //       console.error('Error sending email', error);
+  //       alert('There was an error sending the email.');
+  //     });
+  // }
   clearForm() {
     this.fullName = '';
     this.email = '';
