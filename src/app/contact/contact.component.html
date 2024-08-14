@@ -1,2 +1,22 @@
 <app-navbar></app-navbar>
-<p>contact works!</p>
+<div class="container-fluid form-group ">
+    <h1>Let’s work together</h1>
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+       <div class="form-group">
+        <label  for="">Full Name</label>
+        <input class="form-control" type="text" id="fullName" name="fullName" [(ngModel)]="fullName" required>
+       </div>
+
+        <div class="form-group">
+            <label style="margin-top: 50px;" for="">Email</label>
+            <input class="form-control" type="email" id="email" name="email"   [(ngModel)]="email" required>
+        </div>
+
+        <div class="form-group">
+            <textarea class="form-control"  id="message" name="message" [(ngModel)]="message" required></textarea>
+        </div>
+
+        <button type="submit" [disabled]="!contactForm.form.valid"  class="btn">Send</button>
+    </form>
+</div>
+<app-footer></app-footer>
