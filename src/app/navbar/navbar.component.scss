@@ -139,6 +139,9 @@ a:hover{
 }
 
 @media (max-width: 768px){
+  .navbar{
+    display: none;
+  }
   ul{
     margin-left: 0px;
   }
