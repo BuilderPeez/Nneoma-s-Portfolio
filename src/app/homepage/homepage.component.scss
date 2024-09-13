@@ -155,10 +155,10 @@ a:hover{
   }
 }
 .first img{
-  width: 80%; margin-left: 7%;
+  width: 95%; ;
 }
 .second img{
-  width: 80% ; margin-left: 7%; object-fit: cover; 
+  width: 95% ; ; 
   margin-right: 100px !important;
 }
 .second {
@@ -233,6 +233,7 @@ a:hover{
   .pic img{
     height: 300px;
     margin-top: 50px;
+    margin-left: 25px;
   }
 
   .centered-content {
@@ -300,11 +301,12 @@ a:hover{
       margin-left: 20px;
   }
   .first img{
-    width: 80%; margin-left: 7%;
+    width: 100%;
+    margin-left: -2px
   }
   .second img{
-    width: 80% ; margin-left: 7%; object-fit: cover; 
-    margin-right: 100px !important;
+    width: 100% ;  
+    margin-left: -2px !important;
   }
 
   .first h4, .second h4 {

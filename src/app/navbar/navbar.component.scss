@@ -142,6 +142,9 @@ a:hover{
   ul{
     margin-left: 0px;
   }
+  .navbar{
+    height: 15vh;
+  }
  
   .slideBottom{
     animation: slideBottom 0.8s ease-out 0s 1 both!important;
@@ -167,14 +170,15 @@ a:hover{
         transform: translateY(0);
     }
   }
-  .navbar-toggler-icon:hover{
-    background-color: #FD853A;
+  .bi-view-list:hover{
+    // background-color: #FD853A;
     color: #FD853A;
   }
-  .navbar-toggler-icon{
+  .bi-view-list{
     border-radius: 5px;
     color: white;
-    background-color: white;
+    font-size: larger;
+    // background-color: white;
   }
   .close{
     color: white;
