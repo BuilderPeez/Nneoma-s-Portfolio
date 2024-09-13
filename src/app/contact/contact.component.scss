@@ -41,3 +41,47 @@
             }
         }
     }
+
+    /* Mobile View Adjustments (max-width: 768px) */
+@media (max-width: 768px) {
+    .container-fluid {
+      margin-top: 230px;
+      padding: 20px;
+      font-size: 14px;
+      
+      h1 {
+        font-size: 36px;
+        margin-left: 0;
+        text-align: center;
+      }
+      
+      form {
+        padding: 0 10px;
+  
+        input, textarea {
+          width: 100%; /* Full width for input fields */
+          margin: 10px 0; /* Add margin for better spacing */
+        }
+        .email{
+            margin-top: -50px;
+            background: none;
+        }
+  
+        textarea {
+          height: 20vh; /* Reduce height for mobile */
+        }
+  
+        .btn {
+          width: 100%;
+          margin-top: 20px; /* Centered on mobile */
+          padding: 15px;
+        }
+      }
+    }
+  
+    label {
+      font-size: 14px;
+      margin-left: 0; /* Align label with input fields */
+    }
+  }
+  

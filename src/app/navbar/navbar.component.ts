@@ -11,6 +11,11 @@ import { ThemeServiceService } from './ThemeService.service';
 export class NavbarComponent implements OnInit {
   currentRoute: string | undefined;
   isDarkMode: boolean = false;
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   constructor(
     private router: Router,
     private themeService: ThemeServiceService

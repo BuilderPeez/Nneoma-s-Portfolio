@@ -40,3 +40,58 @@ img{
     background: none;
     width: 0;
 }
+
+/* Mobile view adjustments (max width 768px) */
+@media (max-width: 768px) {
+    .about{
+        margin-top: 200px;
+    }
+    .p2 {
+        line-height: 28px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .name {
+        width: 100%;
+        height: auto;
+        font-size: 35px;
+        line-height: 40px;
+        // position: relative;
+        // top: 700px;
+    }
+
+    .p1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    img {
+        height: 300px;
+        width: 100%; /* Ensures the image is responsive */
+        margin-bottom: 0;
+        position: relative;
+        top: -830px;
+        left: 30px;
+        background: none;
+    }
+
+    .cont1 {
+        position: relative;
+        top: 170px;
+        left: 20px;
+        padding: 10px;
+    }
+
+    .cont2 {
+        position: relative;
+        top: 50px;
+        left: 0;
+        padding: 10px;
+        width: 100%; /* Full width for mobile */
+        text-align: center; /* Center image on mobile */
+        height: 0;
+    }
+
+    
+}
