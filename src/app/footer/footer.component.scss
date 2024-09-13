@@ -6,7 +6,8 @@
       position: relative;
       top: 70px;
       background: none;
-      
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
     p{
       border: #FD853A solid 1px;
@@ -20,6 +21,10 @@
       border-radius: 10px;
       background-color: #FD853A;
       
+    }
+    .text{
+      color: white; margin-left: 770px;
+  
     }
    
     img{
@@ -51,4 +56,62 @@
     }
 
    
+}
+
+@media (max-width: 768px) { /* For devices with a screen width of 768px or less */
+ 
+  .footer h5 {
+    font-size: 18px; /* Adjust font size */
+    top: 50px; /* Reduce top position */
+  }
+
+  .footer p {
+    margin: 10px 20px; /* Reduce margins for mobile */
+    padding: 8px 15px; /* Adjust padding */
+    top: 50px; /* Reduce top position */
+    width: auto; /* Make it responsive */
+  }
+
+  .footer img {
+    margin-top: -250px;
+  }
+
+  .footer .navbar {
+    top: 150px; 
+  }
+
+  // .footer ul {
+  //   margin-left: 10px; /* Reduce left margin */
+  //   display: flex;
+  //   // flex-direction: row;
+  //   position: relative;
+  //   // top: 15px;
+  // }
+
+  .footer ul, .footer li, .footer a {
+    font-size: 10px; 
+ 
+  }
+  // .footer li {
+  //   display: flex;
+  //   flex-direction: row;
+  //   // position: relative;
+  //   // top: 15px;
+  //   // font-size: 9px;
+  //   // margin-left: 4px;
+  // }
+  .text{
+    display: none;
+    
+
+  }
+  .email{
+    font-size: 14px !important;
+  }
+  ul li {
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative;
+    top: -50px;
+  }
 }

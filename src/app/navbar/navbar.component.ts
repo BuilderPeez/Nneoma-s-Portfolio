@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { NavigationEnd, Router, Event } from '@angular/router';
 import { filter } from 'rxjs';
+import { ThemeServiceService } from './ThemeService.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +10,15 @@ import { filter } from 'rxjs';
 })
 export class NavbarComponent implements OnInit {
   currentRoute: string | undefined;
-
-  constructor(private router: Router) {}
+  isDarkMode: boolean = false;
+  constructor(
+    private router: Router,
+    private themeService: ThemeServiceService
+  ) {
+    this.themeService.currentTheme.subscribe((isDark) => {
+      this.isDarkMode = isDark;
+    });
+  }
 
   ngOnInit() {
     this.router.events.pipe(
@@ -18,5 +26,8 @@ export class NavbarComponent implements OnInit {
     ).subscribe((event: NavigationEnd) => {
       this.currentRoute = event.urlAfterRedirects;
     });
+  }
+  toggleTheme() {
+    this.themeService.toggleTheme();
   }
 }

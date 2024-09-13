@@ -5,13 +5,31 @@
     box-sizing: border-box;
     background-color: #0C0C0C;
     scroll-behavior: smooth!important;
+    
+  }
+  body{
+  overflow-x: hidden;
+    // background-color: #0C0C0C;
+    // max-width: 1600px;
 
 }
-body{
-    background-color: #0C0C0C;
-    max-width: 1600px;
-
-}
+// body.light-mode {
+//     background-color: white;
+//     color: black;
+//   }
+  
+//   body.dark-mode {
+//     background-color: black;
+//     color: white;
+//   }
+  
+  .navbar.light-mode {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar.dark-mode {
+    background-color: #343a40;
+  }
 .notfixed{
     position: static;
     transition: 0.3s linear;
@@ -29,5 +47,16 @@ body{
     transition: 0.3s linear;
     height: 15vh;
     // margin-top: 20px;
+}
+@media (max-width: 768px){
+ 
+  .fixed{
+  display: none;
+    // margin-top: 20px;
+}
+.notfixed{
+  display: none;
+  
+}
 }
 

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
+import { ThemeServiceService } from './navbar/ThemeService.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Nne-Port';
+  constructor(private renderer: Renderer2, private themeService: ThemeServiceService) {
+    this.themeService.currentTheme.subscribe((isDark) => {
+      if (isDark) {
+        this.renderer.addClass(document.body, 'dark-mode');
+        this.renderer.removeClass(document.body, 'light-mode');
+      } else {
+        this.renderer.addClass(document.body, 'light-mode');
+        this.renderer.removeClass(document.body, 'dark-mode');
+      }
+    });
+  }
 }
